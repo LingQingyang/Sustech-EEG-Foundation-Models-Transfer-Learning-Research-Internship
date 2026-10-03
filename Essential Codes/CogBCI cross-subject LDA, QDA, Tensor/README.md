@@ -1,8 +1,8 @@
-# CogBCI: cross-subject LD, QD, and tensor geometry
+# CogBCI: cross-subject LDA, QDA, and tensor geometry
 
 [Read the experimental results](RESULTS.md) · [Return to the research overview](../../README.md)
 
-The original directory name uses `IDA`; the experiment implements linear discriminant (LD/LDA), quadratic discriminant (QD/QDA), residual, and tensor feature arms.
+The experiment uses linear discriminant analysis (LDA), quadratic discriminant analysis (QDA), their score residual, and tensor interaction features. The feature arms use the abbreviations LD and QD for their respective discriminant scores.
 
 ## Entry points
 

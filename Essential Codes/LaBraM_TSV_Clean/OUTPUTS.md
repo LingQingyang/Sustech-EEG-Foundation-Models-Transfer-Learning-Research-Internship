@@ -27,7 +27,7 @@ Each `<root>/runs/<task>/repXX/` contains:
 
 Supporting, non-seventh-spectrum tables:
 
-- `functional_cutoffs.csv`: candidate (q^*\), (K^*\), baselines and exact target metadata.
+- `functional_cutoffs.csv`: candidate $q^*$, $K^*$, baselines and exact target metadata.
 - `shared_energy_random_reference.csv`: matched Haar null envelope for Shared Energy.
 - `shared_components/*.csv`: auditable component ordering for each comparison.
 - `random_cache/*.npz`: rank-signature cache for expensive principal-angle nulls.

@@ -13,7 +13,7 @@ The already-existing `run_tsv_labram_m3cv_v0_3_4.py` remains a **frozen numerica
 
 ## 1. Final V5.0 run grid
 
-The final analysis grid is exactly 5 tasks × 2 replicates = 10 independent fine-tunes from the same pretrained LaBraM backbone \(W_0\).
+The final analysis grid is exactly 5 tasks × 2 replicates = 10 independent fine-tunes from the same pretrained LaBraM backbone $W_0$.
 
 | Run | V5.0 source |
 |---|---|
@@ -36,15 +36,15 @@ The seven approved legacy runs are linked at the **replicate-directory level**, 
 
 V5.0 does not run a new Rest pilot. The common endpoint remains
 
-\[
+$$
 E^*=20.
-\]
+$$
 
 It is inherited from the certified original v0.3.4 eight-run pilot, where all 8 pilot trajectories failed the strict rolling plateau certification and the explicit `pilot_max_epoch_fallback` rule selected the full 20-epoch budget.
 
 Therefore V5.0 makes the following precise claim:
 
-> The endpoint was selected by the original four-task eight-run pilot and then frozen. The new Motor/rep02 and Rest/rep01–02 runs start from the same \(W_0\), use the same optimization and seed contract, and train for exactly the same 20 epochs. V5.0 does not claim that a new ten-run pilot certified \(E^*\).
+> The endpoint was selected by the original four-task eight-run pilot and then frozen. The new Motor/rep02 and Rest/rep01–02 runs start from the same $W_0$, use the same optimization and seed contract, and train for exactly the same 20 epochs. V5.0 does not claim that a new ten-run pilot certified $E^*$.
 
 The `pilot` launcher mode is intentionally disabled.
 
@@ -134,7 +134,7 @@ Legacy source root:
 bash run_task_geometry_v5_0.sh preflight
 ```
 
-This performs the full five-task data/model audit and seals the V5-specific frozen-\(E^*\) protocol.
+This performs the full five-task data/model audit and seals the V5-specific frozen-$E^*$ protocol.
 
 ### Step 2: inspect legacy provenance
 
@@ -199,7 +199,7 @@ The intended 22 key figures remain:
 - 5 Single-Context overlapped-functional spectra
 - 5 Full-Context overlapped-functional spectra
 
-The mathematical definitions remain those of the mature protocol: rank-1 matrix directions \(Z_j=u_jv_j^\top\) in Frobenius space, Single/Full Context principal angles, matched random reference, same-task Replicate Reference, overlapped functional reconstruction, and paper-aligned STI.
+The mathematical definitions remain those of the mature protocol: rank-1 matrix directions $Z_j=u_jv_j^\top$ in Frobenius space, Single/Full Context principal angles, matched random reference, same-task Replicate Reference, overlapped functional reconstruction, and paper-aligned STI.
 
 ## 9. Scientific boundary
 
