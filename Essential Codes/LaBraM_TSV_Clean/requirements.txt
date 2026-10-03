@@ -1,0 +1,4 @@
+# Keep the torch/timm versions from the already working LaBraM CUDA environment.
+numpy>=1.23,<3
+h5py>=3.8,<4
+matplotlib>=3.6,<4

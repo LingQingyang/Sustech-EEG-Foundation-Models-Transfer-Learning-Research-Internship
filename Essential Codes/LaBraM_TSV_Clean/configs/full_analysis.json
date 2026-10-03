@@ -1,0 +1,28 @@
+{
+  "root": "/omni-eeg-01/task calibration/results/tsv_labram_m3cv/tsv_labram_m3cv_clean_v1_0",
+  "data_root": "/omni-eeg-01/task calibration/dataset/m3cv",
+  "checkpoint": "/omni-eeg-01/task calibration/LaBraM/checkpoints/labram-base.pth",
+  "modeling_file": "/omni-eeg-01/task calibration/LaBraM/modeling_finetune.py",
+  "output_dir": "/omni-eeg-01/task calibration/results/tsv_labram_m3cv/tsv_labram_m3cv_clean_v1_0/analysis_full",
+  "device": "cuda",
+  "training": {
+    "epochs": 20,
+    "replicates": 2,
+    "batch_size": 32,
+    "eval_batch_size": 64,
+    "backbone_lr": 0.0001,
+    "head_lr": 0.001,
+    "weight_decay": 0.0,
+    "beta1": 0.9,
+    "beta2": 0.999,
+    "adam_eps": 1e-8,
+    "amp": false,
+    "workers": 0,
+    "ram_reserve_gb": 4.0,
+    "seed_base": 20260819,
+    "model_init_seed": 314159
+  },
+  "analysis": {
+    "profile": "full"
+  }
+}

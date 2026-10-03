@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "labram-tsv-clean"
+version = "1.0.0"
+description = "Clean LaBraM x M3CV full fine-tuning and six-spectrum analysis"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.23,<3",
+  "h5py>=3.8,<4",
+  "matplotlib>=3.6,<4"
+]
+
+[project.optional-dependencies]
+model = ["torch", "timm"]
+
+[project.scripts]
+labram-tsv = "labram_tsv.run:main"
+
+[tool.setuptools]
+packages = ["labram_tsv"]
